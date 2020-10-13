@@ -16,7 +16,7 @@ Bookstore app built using React and Redux. The project consists of the front-end
 
 ## Live Demo
 
-[Live demo]()
+[Live demo](https://safe-castle-50597.herokuapp.com/)
 
 
 ## Getting Started
