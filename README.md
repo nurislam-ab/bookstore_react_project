@@ -27,13 +27,6 @@ Bookstore app built using React and Redux. The project consists of the front-end
 
 ## Authors
 
-👤 Martin Cervantes
-- Github: [@mcervantes71](https://github.com/mcervantes71)
-- Gmail: [cervantes.martine](mailto:cervantes.martine@gmail.com)
-- Linkedin: [Martin Cervantes](https://www.linkedin.com/in/cervantesmartin/)
-- Twitter: [@M4rt1nC3rv4nt3s](https://twitter.com/M4rt1nC3rv4nt3s)
-
-
 👤 Nurislam Ab
 - Github: [@nurislam-ab](https://github.com/nurislam-ab)
 - Linkedin: [nurislam-ab](https://www.linkedin.com/in/nurislam-ab/)
