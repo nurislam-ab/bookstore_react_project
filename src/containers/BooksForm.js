@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class BooksForm extends React.Component {
   constructor(props) {
@@ -9,15 +10,24 @@ class BooksForm extends React.Component {
       title: '',
       category: this.categories[0],
     };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(event) {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+    console.log(name, value);
   }
 
   render() {
     return (
-      <form>
+      <form onChange={this.handleChange}>
         <input
           type="text"
           name="title"
           placeholder="Enter book title"
+          onChange={this.handleChange}
         />
 
         <select name="category">
