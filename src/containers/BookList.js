@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
   <table>
@@ -11,11 +12,9 @@ const BooksList = ({ books }) => (
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>bookId</td>
-        <td>title</td>
-        <td>category</td>
-      </tr>
+      {books.map(({ bookId, title, category }) => (
+        <Book bookId={bookId} title={title} category={category} key={bookId} />
+      ))}
     </tbody>
   </table>
 );
