@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
+import rootReducer from './reducers/index';
 
 const bookIds = () => Math.ceil(Math.random() * 100);
 
@@ -33,7 +36,11 @@ const initialState = {
   books,
 };
 
+const store = createStore(rootReducer, initialState);
+
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root'),
 );
