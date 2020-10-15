@@ -41,9 +41,10 @@ class BooksForm extends React.Component {
           name="title"
           placeholder="Enter book title"
           onChange={this.handleChange}
+          required
         />
 
-        <select name="category">
+        <select name="category" required>
           {this.categories.map(category => (
             <option
               key={category}
