@@ -20,7 +20,6 @@ class BooksForm extends React.Component {
   handleChange(event) {
     const { name, value } = event.target;
     this.setState({ [name]: value });
-    console.log(name, value);
   }
 
   handleSubmit(e) {
@@ -29,9 +28,7 @@ class BooksForm extends React.Component {
     const { createBook } = this.props;
 
     createBook(this.state);
-    console.log(this.state);
     this.setState({ title: '', category: '' });
-    console.log(this.state);
     event.target.title.value = '';
     event.target.category.value = '';
   }
