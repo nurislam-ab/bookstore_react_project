@@ -6,10 +6,9 @@ const createBook = book => ({
   book,
 });
 
-const removeBook = (book, index) => ({
+const removeBook = book => ({
   type: REMOVE_BOOK,
-  book,
-  index,
+  bookId: book.bookId,
 });
 
-export default { createBook, removeBook };
+export { createBook, removeBook };

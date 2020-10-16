@@ -6,8 +6,6 @@ import './index.css';
 import App from './components/App';
 import rootReducer from './reducers/index';
 
-const bookIds = () => Math.ceil(Math.random() * 100);
-
 const bookTitles = [
   'One by One',
   'Hyperbole and a Half: Unfortunate Situations, Flawed Coping Mechanisms, Mayhem, and Other Things That Happened',
@@ -26,7 +24,7 @@ const books = [];
 
 for (let i = 0; i < bookTitles.length; i += 1) {
   books[i] = {
-    bookId: bookIds(),
+    bookId: i,
     title: bookTitles[i],
     category: categories[categoryRandom()],
   };
