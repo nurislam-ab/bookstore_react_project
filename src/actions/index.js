@@ -12,8 +12,9 @@ const removeBook = book => ({
   bookId: book.bookId,
 });
 
-const changeFilter = () => ({
+const changeFilter = category => ({
   type: CHANGE_FILTER,
+  category,
 });
 
 export { createBook, removeBook, changeFilter };
