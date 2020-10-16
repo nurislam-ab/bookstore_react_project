@@ -1,7 +1,7 @@
 const CREATE_BOOK = 'CREATE_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
 
-const bookIds = () => Math.ceil(Math.random() * 100);
+const bookIds = () => Math.ceil(Math.random() * 100 + 10);
 
 const bookReducer = (state = [], action) => {
   switch (action.type) {
