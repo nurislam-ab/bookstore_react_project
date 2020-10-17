@@ -12,7 +12,11 @@ const Book = ({ book, removeBook }) => {
     <div className="book-preview-card">
       <div className="book-preview-info">
         <span className="book-category">{book.category}</span>
-        <h2 className="book-title">{book.title}</h2>
+        <h2 className="book-title">
+          <a href="https://polar-citadel-29411.herokuapp.com/">
+            {book.title}
+          </a>
+        </h2>
         <a href="https://polar-citadel-29411.herokuapp.com/" className="book-author">Suzanne Collins</a>
         <div className="book-preview-btns">
           <div className="btn-wrapper">
