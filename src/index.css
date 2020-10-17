@@ -43,3 +43,21 @@ button {
   cursor: pointer;
   outline: none;
 }
+
+.content {
+  padding: 10px;
+  margin: 0 50px;
+  text-align: left;
+}
+
+.title {
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  text-transform: uppercase;
+}
