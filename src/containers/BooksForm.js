@@ -59,7 +59,7 @@ class BooksForm extends React.Component {
                 </option>
               ))}
             </select>
-            <button type="submit">Save book</button>
+            <button type="submit" className="btn-default">Save book</button>
           </form>
         </div>
       </section>
