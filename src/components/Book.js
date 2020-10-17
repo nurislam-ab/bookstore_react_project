@@ -11,7 +11,7 @@ const Book = ({ book, removeBook }) => {
   return (
     <div className="book-preview-card">
       <div className="book-preview-info">
-        <span className="book-category">{book.category}</span>
+        <a className="book-category" href="https://polar-citadel-29411.herokuapp.com/">{book.category}</a>
         <h2 className="book-title">
           <a href="https://polar-citadel-29411.herokuapp.com/">
             {book.title}
