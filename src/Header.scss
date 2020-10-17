@@ -4,12 +4,12 @@ header.main-nav {
   display: flex;
   padding: 10px;
   height: 95px;
-  width: 100%;
+  width: calc(100% - 20px);
   background-color: #fff;
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  border: solid 3px #e8e8e8;
+  border-bottom: solid 1px $border_color;
 
   .logo,
   .profile {
@@ -29,11 +29,38 @@ header.main-nav {
     }
   }
 
+  .profile {
+    a {
+      svg {
+        width: 25px;
+        height: 25px;
+        border: 1px solid $border_color;
+        border-radius: 50%;
+        padding: 10px;
+        transition: 0.5s;
+
+        path {
+          fill: $azure;
+        }
+      }
+
+      &:hover {
+        svg {
+          background-color: $azure;
+
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+
   nav.menu {
     text-align: left;
     width: 50%;
 
-    a {
+    .menu-link {
       font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
       font-size: 13px;
       font-weight: normal;
