@@ -18,22 +18,7 @@
   input,
   select,
   button {
-    height: 45px;
     border-radius: 4px;
-  }
-
-  input,
-  select {
-    font-family: 'Montserrat-Regular', sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.15px;
-    color: #c4c4c4;
-    border: solid 1px $border_color;
-    background-color: #fff;
   }
 
   input {
@@ -48,12 +33,6 @@
 
   select {
     width: 25%;
-    padding: 0 5px;
-  }
-
-  input:focus,
-  select:focus {
-    outline-color: $azure;
   }
 
   button {
