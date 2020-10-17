@@ -1,0 +1,9 @@
+@import 'color';
+
+.book-form-content {
+  h2.title {
+    border-top: 2px solid $border_color;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+}
