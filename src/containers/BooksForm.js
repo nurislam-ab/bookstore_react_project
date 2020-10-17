@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import '../BookForm.scss';
+import '../assets/scss/BookForm.scss';
 import { createBook } from '../actions/index';
 import categoriesList from '../const/categories';
 

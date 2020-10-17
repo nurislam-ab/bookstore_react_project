@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Header.scss';
+import '../assets/scss/Header.scss';
 
 const Header = () => (
   <header className="main-nav">

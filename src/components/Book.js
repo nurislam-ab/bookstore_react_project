@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../Book.scss';
-import '../progressBar.scss';
+import '../assets/scss/Book.scss';
+import '../assets/scss/progressBar.scss';
 
 const Book = ({ book, removeBook }) => {
   const percentage = () => Math.ceil(Math.random() * 100);
