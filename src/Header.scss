@@ -1,0 +1,55 @@
+@import 'color';
+
+header.main-nav {
+  display: flex;
+  padding: 10px;
+  height: 95px;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  border: solid 3px #e8e8e8;
+
+  .logo,
+  .profile {
+    width: 25%;
+  }
+
+  .logo {
+    h1 {
+      font-family: "Montserrat-Bold", Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $azure;
+    }
+  }
+
+  nav.menu {
+    text-align: left;
+    width: 50%;
+
+    a {
+      font-family: "Montserrat-Regular", Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 1.9px;
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: 0.5;
+      padding: 0 15px;
+    }
+
+    a.active {
+      color: $black_three;
+      opacity: 1;
+    }
+  }
+}
