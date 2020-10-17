@@ -40,7 +40,7 @@ class BooksForm extends React.Component {
       <section className="container">
         <div className="content book-form-content">
           <h2 className="title">Add new book</h2>
-          <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
+          <form onSubmit={this.handleSubmit} onChange={this.handleChange} className="new-book-form">
             <input
               type="text"
               name="title"
