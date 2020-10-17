@@ -40,7 +40,17 @@
       font-weight: bold;
       letter-spacing: -0.2px;
       margin-top: 8px;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
+
+      a {
+        text-decoration: none;
+        color: $black_three;
+        transition: 0.3s;
+
+        &:hover {
+          color: $azure;
+        }
+      }
     }
 
     a.book-author {
@@ -51,13 +61,13 @@
       width: fit-content;
       transition: 0.5s;
       text-decoration: none;
-    }
 
-    a.book-author:hover {
-      color: #fff;
-      background-color: $azure;
-      padding: 0 4px;
-      border-radius: 2px;
+      &:hover {
+        color: #fff;
+        background-color: $azure;
+        padding: 0 4px;
+        border-radius: 2px;
+      }
     }
 
     .book-preview-btns {
