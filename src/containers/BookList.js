@@ -16,11 +16,11 @@ const BooksList = ({
   const handleFilterChange = category => changeFilter(category);
 
   return (
-    <div>
+    <section className="container">
       <div className="category-filter">
         <CategoryFilter onFilter={handleFilterChange} />
       </div>
-      <div className="book-list">
+      <div className="book-list content">
         {books
           .filter(book => (filter === 'All' ? true : book.category === filter))
           .map(book => (
@@ -31,7 +31,7 @@ const BooksList = ({
             />
           ))}
       </div>
-    </div>
+    </section>
   );
 };
 
