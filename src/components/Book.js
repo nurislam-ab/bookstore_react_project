@@ -1,8 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../Book.scss';
+import '../progressBar.scss';
 
-const Book = ({ book, removeBook }) => (
+const Book = ({ book, removeBook }) => {
+  const percentage = () => Math.ceil(Math.random() * 100);
+  const percentageIndicator = percentage();
+  const progressClassName = `p${percentageIndicator}`;
+
+  return (
     <div className="book-preview-card">
       <div className="book-preview-info">
         <span className="book-category">{book.category}</span>
@@ -27,7 +33,7 @@ const Book = ({ book, removeBook }) => (
       </div>
 
       <div className="reading-progress">
-        <div id="c100" className="progress">
+        <div id="c100" className={progressClassName}>
           <div className="slice">
             <div className="bar" />
             <div className="fill" />
@@ -35,7 +41,7 @@ const Book = ({ book, removeBook }) => (
         </div>
         <div className="progress-info">
           <span className="progress-percent">
-            75
+            {percentageIndicator}
             %
           </span>
           <span className="progress-text">Completed</span>
@@ -48,7 +54,8 @@ const Book = ({ book, removeBook }) => (
         <button type="button" className="update-progress-btn">Update progress</button>
       </div>
     </div>
-);
+  );
+};
 
 Book.propTypes = {
   book: PropTypes.shape({
