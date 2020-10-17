@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import '../BookForm.scss';
 import { createBook } from '../actions/index';
 import categoriesList from '../const/categories';
 
@@ -36,8 +37,9 @@ class BooksForm extends React.Component {
 
   render() {
     return (
-      <section className="container book-form-container">
-        <div className="content">
+      <section className="container">
+        <div className="content book-form-content">
+          <h2 className="title">Add new book</h2>
           <form onSubmit={this.handleSubmit} onChange={this.handleChange}>
             <input
               type="text"
