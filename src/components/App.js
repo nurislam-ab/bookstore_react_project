@@ -7,8 +7,10 @@ import Header from './Header';
 const App = () => (
   <div className="App">
     <Header />
-    <BookList />
-    <BookForm />
+    <main>
+      <BookList />
+      <BookForm />
+    </main>
   </div>
 );
 
