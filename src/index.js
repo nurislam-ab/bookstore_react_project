@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './components/App';
 import rootReducer from './reducers/index';
+import categoriesList from './const/categories';
 
 const bookTitles = [
   'One by One',
@@ -16,7 +17,7 @@ const bookTitles = [
   'Hidden Valley Road: Inside the Mind of an American Family',
 ];
 
-const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
+const categories = categoriesList;
 
 const categoryRandom = () => Math.floor(Math.random() * categories.length);
 
