@@ -47,7 +47,7 @@
       font-family: 'RobotoSlabLight', Arial, Helvetica, sans-serif;
       font-size: 14px;
       font-weight: 300;
-      color: #4386bf;
+      color: $blue_link;
       width: fit-content;
       transition: 0.5s;
       text-decoration: none;
@@ -55,7 +55,7 @@
 
     a.book-author:hover {
       color: #fff;
-      background-color: #4386bf;
+      background-color: $azure;
       padding: 0 4px;
       border-radius: 2px;
     }
@@ -82,7 +82,7 @@
         text-align: left;
         font-size: 14px;
         font-weight: 300;
-        color: #4386bf;
+        color: $blue_link;
         border: none;
         background-color: transparent;
         border-bottom: 2px solid transparent;
@@ -92,7 +92,7 @@
       }
 
       button:hover {
-        border-bottom-color: #4386bf;
+        border-bottom-color: $blue_link;
       }
     }
   }
