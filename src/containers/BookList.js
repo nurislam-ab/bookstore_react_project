@@ -17,7 +17,7 @@ const BooksList = ({
 
   return (
     <section className="container">
-      <div className="category-filter">
+      <div className="category-filter content">
         <CategoryFilter onFilter={handleFilterChange} />
       </div>
       <div className="book-list content">
