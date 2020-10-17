@@ -47,6 +47,7 @@ header.main-nav {
       &:hover {
         svg {
           background-color: $azure;
+          border-color: transparent;
 
           path {
             fill: #fff;
