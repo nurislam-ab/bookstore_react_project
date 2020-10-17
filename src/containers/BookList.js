@@ -20,26 +20,17 @@ const BooksList = ({
       <div className="category-filter">
         <CategoryFilter onFilter={handleFilterChange} />
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books
-            .filter(book => (filter === 'All' ? true : book.category === filter))
-            .map(book => (
-              <Book
-                book={book}
-                key={book.bookId}
-                removeBook={handleRemoveBook}
-              />
-            ))}
-        </tbody>
-      </table>
+      <div className="book-list">
+        {books
+          .filter(book => (filter === 'All' ? true : book.category === filter))
+          .map(book => (
+            <Book
+              book={book}
+              key={book.bookId}
+              removeBook={handleRemoveBook}
+            />
+          ))}
+      </div>
     </div>
   );
 };
