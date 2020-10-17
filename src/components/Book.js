@@ -55,7 +55,7 @@ const Book = ({ book, removeBook }) => {
       <div className="reading-data">
         <span className="chapter-label">Current chapter</span>
         <strong className="chapter">Chapter 17</strong>
-        <button type="button" className="update-progress-btn">Update progress</button>
+        <button type="button" className="btn-default">Update progress</button>
       </div>
     </div>
   );
