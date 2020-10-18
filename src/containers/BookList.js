@@ -16,31 +16,22 @@ const BooksList = ({
   const handleFilterChange = category => changeFilter(category);
 
   return (
-    <div>
-      <div className="category-filter">
+    <section className="container">
+      <div className="category-filter content">
         <CategoryFilter onFilter={handleFilterChange} />
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books
-            .filter(book => (filter === 'All' ? true : book.category === filter))
-            .map(book => (
-              <Book
-                book={book}
-                key={book.bookId}
-                removeBook={handleRemoveBook}
-              />
-            ))}
-        </tbody>
-      </table>
-    </div>
+      <div className="book-list content">
+        {books
+          .filter(book => (filter === 'All' ? true : book.category === filter))
+          .map(book => (
+            <Book
+              book={book}
+              key={book.bookId}
+              removeBook={handleRemoveBook}
+            />
+          ))}
+      </div>
+    </section>
   );
 };
 
