@@ -1,0 +1,40 @@
+@import 'color';
+
+.book-form-content {
+  margin-bottom: 100px;
+
+  h2.title {
+    border-top: 2px solid $border_color;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.new-book-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  input,
+  select,
+  button {
+    border-radius: 4px;
+  }
+
+  input {
+    width: 50%;
+    color: $black_three;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+
+  select {
+    width: 25%;
+  }
+
+  button {
+    width: 20%;
+  }
+}
