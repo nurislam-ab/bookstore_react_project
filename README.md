@@ -3,11 +3,9 @@
 Bookstore app built using React and Redux. The project consists of the front-end of an application that will help to organize and manage bookstore. As the app should be fast, dynamic and responsive to the actions, it is built using React & Redux.
 
 ## Screeenshot
-<<<<<<< HEAD
+
 ![Bookstore](public/Bookstore.jpg)
-=======
-![weather_app](public/Bookstore.jpg)
->>>>>>> 0bf3c14913f1a30a4477c21248e9ef2a8d5c0099
+
 ## Built With
 
 - create-react-app
